@@ -65,7 +65,7 @@ void infixtopostfix(string exp)
         else{
             while(!s.empty() && prec(c) <= prec(s.top()))
             {
-                res += c;
+                res += st.top();
                 s.pop();
             }
             s.push(c);
